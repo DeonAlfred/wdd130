@@ -1,0 +1,9 @@
+:root{
+--primary-color:#091136;
+--secondary-color: #fb0f07;
+--accent1-color: #70e000;
+--accent2-color: #fdfcdc;
+}
+.backg { 
+    background-color: rgb(40, 94, 141);
+}
