@@ -118,9 +118,13 @@ h2{
 footer a{
     text-decoration: none;
     color: #091136;
-    padding: 25px50px;
     margin-top: 200px;
-    padding-top: 15;
+    padding-top: 15px;
+}
+
+footer a:hover{
+    background-color: #fb0f07; 
+    padding-top: 20px
 }
 
 footer p{
