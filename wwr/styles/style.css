@@ -1,31 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto+Serif:ital=Roboto,sans-serif;opsz@0,8..144;1,8..144&display=swap');
 
-root{
-    --heading-font:  'Courgette', cursive;
-  --paragraph-font: 'Roboto Serif', serif;
+::first-line {
+    --heading-font: 'Courgette', cursive;
+    --paragraph-font: 'Roboto Serif', serif;
 }
-#content{
+
+#content {
     max-width: 1600px;
     margin: 0 auto;
 }
 
-#logo_link{
+.logo {
+    width: 80px;
+}
+
+#logo_link {
     padding-top: 5px;
     justify-self: center;
     align-self: center;
 }
 
-
-nav a{
-    text-align: center;
-    color: #70e000;
-    text-decoration: none;
-    padding: 35px;
+nav {
     display: flex;
     justify-content: space-around;
 }
 
-.home-title{
+nav a {
+    text-align: center;
+    color: #70e000;
+    text-decoration: none;
+    padding: 35px;
+}
+
+.home-title {
     font-family: 'Courgette', cursive;
     text-align: center;
     color: #091136;
@@ -33,105 +40,116 @@ nav a{
     margin-top: 10px;
 }
 
-h4{
+h4 {
     text-align: center;
     color: #091136;
 }
 
-.button-box{
+.button-box {
     text-align: center;
-    
+
     color: #fb0f07;
 }
 
-.home-grid{
+.home-grid {
     text-align: center;
 }
 
-#background{
+#background {
     grid-row: 4/9;
     grid-column: 1/11;
     height: 725px;
     margin-bottom: 40px;
-    background-color: #091136   
-    
+    background-color: #091136
 }
 
-body{
+body {
     background-color: blanchedalmond;
     font-size: 22px;
     font-family: 'Roboto Serif', serif;
     margin: 0;
-    padding: 0;  
+    padding: 0;
 }
 
-.rivers-card{
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.rivers-card,
+.camping-card,
+.rapids-card {
     margin: 200px 0;
+}
+
+.rivers-card {
     grid-row: 2/3;
     grid-column: 2/4;
 }
 
-.camping-card{
-    margin: 200px 0;
+.camping-card {
+
     grid-row: 2/3;
     grid-column: 5/7;
 }
 
-.rapids-card{
-    margin: 200px 0;
+.rapids-card {
+
     grid-row: 2/3;
-    grid-column:8/10 ;
+    grid-column: 8/10;
 }
 
-header{
-    display:grid;
-    grid-template-columns: 10px auto;
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
     background-color: #091136;
 }
 
-nav a:hover{
- 
+nav a:hover {
+
     color: #fb0f07;
 }
 
-.book,.join{
-  background-color: #70e000;
-  color: #091136;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 15px 30px;
-  margin-top: 50px;
-  border-radius: 5px;
-} 
+.book,
+.join {
+    background-color: #70e000;
+    color: #091136;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
 
 
-.join:hover, .book:hover{
-    background-color:#fb0f07;
+.join:hover,
+.book:hover {
+    background-color: #fb0f07;
     color: #70e000;
-} 
+}
 
 
 .msg {
-    background-color:burlywood;
+    background-color: burlywood;
     color: #091136;
     grid-row: 6/7;
     grid-column: 6/10;
-    line-height: 1.5em ;
+    line-height: 1.5em;
     padding: 35px;
     box-shadow: 5px 5px 10px #6f7364;
 }
 
 
-.msg p{
+.msg p {
     font-size: 0.8em;
     padding-bottom: 15px;
 }
 
-.msg h2{
+.msg h2 {
     color: #fb0f07;
 }
 
-h2{
+h2 {
     color: #fb0f07;
     margin: 0;
 }
@@ -139,82 +157,127 @@ h2{
 
 footer {
     text-decoration: none;
-    color: #091136;
+    color: #fff;
+    background-color: #3e3e3e;
     padding-top: 15px;
     padding: 25px 50px;
     justify-content: space-around;
     align-items: center;
+    display: flex;
 }
 
-footer.social{
+.social {
     text-decoration: none;
-    color: #091136;
+    color: #fff;
     padding-top: 15px;
     padding: 25px 50px;
     justify-content: space-around;
     align-items: center
-    
-    
-   
-}
-footer a:hover{
-    background-color: #fb0f07; 
-    padding-top: 20px
 }
 
-footer p{
+footer a {
+    text-decoration: none;
+    color: #fff;
+   
+}
+
+footer p {
     font: 1.2em;
 }
 
-footer p a:hover{
-    background-color: #70e000;
+footer p a:hover {
+    /* background-color: #70e000; */
     color: #fb0f07;
     text-decoration: underline;
 }
 
-#hero{
+#hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr
 }
-#hero-img{
+
+#hero-img {
     width: 100%;
-    box-sizing: border-box;    
-    
+    box-sizing: border-box;
+
 }
 
-#hero-box{
+#hero-box {
     z-index: -1;
     grid-row: 1/3;
     grid-column: 1/4
-    
 }
-#hero-msg{
+
+#hero-msg {
     margin-top: 100px;
     grid-column: 2/3;
     grid-row: 1/2
 }
 
-.icon{
+.icon {
     padding-top: 10px;
 }
 
-.card-img{
-    border: 10px solid   #091136; 
+.card-img {
+    border: 10px solid #091136;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
+    width: 100%;
 }
 
 .card-img:hover {
     opacity: .6;
     transform: scale(1.1);
 }
+
 .mountains {
     width: 100%;
     grid-row: 5/8;
     grid-column: 2/7;
     box-shadow: 5px 5px 10px #6f7364;
 }
-main section img{
+
+main section img {
     box-sizing: border-box;
 }
-
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
