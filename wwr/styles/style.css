@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:opsz@8..144&display=swap')
 
-
 ::first-line {
     --heading-font: 'Courgette', cursive;
-    --paragraph-font: 'Roboto Serif', serif;
+    --paragraph-font: 'Roboto"" Serif', serif;
 }
 
 #content {
