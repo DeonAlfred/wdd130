@@ -1,10 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:opsz@8..144&display=swap')
 
-
-::first-line {
-    --heading-font: 'Courgette', cursive;
-    --paragraph-font: 'Roboto Serif', serif;
-}
 
 #content {
     max-width: 1600px;
@@ -14,7 +8,7 @@
 .logo {
     width: 80px;
 }
-
+ 
 #logo_link {
     padding-top: 5px;
     justify-self: center;
@@ -293,15 +287,12 @@ main section img {
     text-align: center;
     display: block;
     margin: auto;
-    text-wrap: center;
-    
 }
 .wrap{
     font-weight: 900;
     font-style: italic;
     margin-right: 60%;
     margin-left: 10%;
-    text-overflow:balance;
     padding-right:  20px;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -329,13 +320,11 @@ main section img {
     font-weight: 900;
     font-style: italic;
     box-shadow: 10px 10px 10px 10px #70e000;
-    text-wrap: balance;
     border-radius: 30px;
     margin-top:  5%;
     margin-bottom: 5%;
     margin-right: 35%;
     margin-left: 20%;
-    text-overflow:balance;
     padding-right:  20px;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -345,13 +334,13 @@ main section img {
     opacity: .8;
     transform: scale(1.1);
     color: #fb0f07;
-    box-shadow: #70e000;
+    
 }
 .a:hover{
     opacity: .8;
     transform: scale(1.1);
     color: #fb0f07;
-    box-shadow: #70e000;
+    
 }
 .wrap2{
 
@@ -364,7 +353,6 @@ main section img {
     opacity: .8;
     transform: scale(1.1);
     color: #fb0f07;
-    box-shadow: #70e000;
 
 }
 footer {
