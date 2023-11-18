@@ -160,7 +160,11 @@ nav a:hover {
   background-color: #ccc;
   line-height: 3em;
 }
-
+.sm-page4 {
+  grid-area: 1fr 1fr 1fr;
+  background-color: #ccc;
+  line-height: 3em;
+}
 .top {
   grid-area: top;
   border-left: 1px solid;
@@ -176,4 +180,9 @@ nav a:hover {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
+}
+.bottom {
+  grid-area: bottom;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
 }
