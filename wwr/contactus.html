@@ -79,7 +79,7 @@
         const formElement = document.forms[0];
         formElement.addEventListener('submit', function (e) {
             e.preventDefault();
-            feedbackElement.innerHTML = 'Hello Fellow Gamer ' + formElement.user_name.value + '!Your Gaming input Means alot, Keep on gaming';
+            feedbackElement.innerHTML = 'Hello' + formElement.user_name.value + '!Your Gaming input Means alot, Keep on gaming';
             feedbackElement.style.display = "block";
             document.body.classList.toggle('moveDown');
         });
