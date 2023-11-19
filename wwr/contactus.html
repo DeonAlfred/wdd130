@@ -79,7 +79,7 @@
         const formElement = document.forms[0];
         formElement.addEventListener('submit', function (e) {
             e.preventDefault();
-            feedbackElement.innerHTML = 'Hello' + formElement.user_name.value + '!Your input Means alot, have a nice day';
+            feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '!Your input Means alot, have a nice day';
             feedbackElement.style.display = "block";
             document.body.classList.toggle('moveDown');
         });
