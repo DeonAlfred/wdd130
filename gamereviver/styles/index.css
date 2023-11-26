@@ -1,27 +1,321 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto+Serif:ital=Roboto,sans-serif;opsz@0,8..144;1,8..144&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto+Serif:ital=Roboto,sans-serif;opsz@0,8..144;1,8..144&display=swap');
+
 
 :root {
-  /* change the values below to your colors from your palette */
-  --primary-color:#C70707;
-  --secondary-color: #05134A;
-  --accent1-color: #F3A712;
-  --accent2-color: #A8C686;
+    /* change the values below to your colors from your palette */
+    --primary-color: #C70707;
+    --secondary-color: #05134A;
+    --accent1-color: #F3A712;
+    --accent2-color: #A8C686;
 
-  /* change the values below to your chosen font(s) */
-  --heading-font:  'Courgette', cursive;
-  --paragraph-font: 'Roboto Serif', serif; 
+    /* change the values below to your chosen font(s) */
+    --heading-font: 'Courgette', cursive;
+    --paragraph-font: 'Roboto Serif', serif;
 
 
-  /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #05134a;  /* headlines on a white background */ 
-  --headline-color-on-color: #fb0f07; /* headlines on a colored background */ 
-  --paragraph-color-on-white:#F3A712; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #fdfcdc; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #091136;
-  --nav-link-color: #fb0f07;
-  --nav-background-color: #70e000;
-  --nav-hover-link-color: #fdfcdc;
-  --nav-hover-background-color: #091136;
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #05134a;
+    /* headlines on a white background */
+    --headline-color-on-color: #fb0f07;
+    /* headlines on a colored background */
+    --paragraph-color-on-white: #F3A712;
+    /* paragraph text on a white background */
+    --paragraph-color-on-color: #A8C686;
+    /* paragraph text on a colored background */
+    --paragraph-background-color: #05134a;
+    --nav-link-color: #fb0f07;
+    --nav-background-color: #A8C686;
+    --nav-hover-link-color: #F3A712;
+    --nav-hover-background-color: #05134a;
+}
+
+body {
+    background-color: #A8C686;
+    font-family: var(--paragraph-font);
+
+    font-size: 15px;
+
+    color: var(--accent3-color);
+
+}
+
+.logo {
+    width: 110px;
+    margin-left: 10px;
+    border-radius: 100px;
+    background-color: #F3A712;
+    transition: transform .5s;
+}
+
+.logo:hover {
+    opacity: .6;
+    transform: scale(2.1);
+}
+
+#logolink {
+    width: 20%;
+    justify-self: center;
+    align-self: center;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+
+
+}
+
+
+h2,
+
+h3,
+
+h4,
+
+h5,
+
+h6 {
+
+    font-family: var(--heading-font);
+
+    font-weight: 700;
+
+    color: var(--secondary-color);
+
+}
+
+h1 {
+    font-style: oblique;
+    color: #C70707;
+    font-size: 3.5em;
+    font-family: var(--heading-font);
+    background-color: #F3A712;
+    border-radius: 30%;
+    text-align: center;
+}
+
+
+
+.firstimage {
+    min-height: fit-content;
+    padding-left: 40px;
+    box-shadow: 10px 10px 10px 10px #C70707;
+    image-rendering: crisp-edges;
+    margin-bottom: 40px;
+    margin-right: 60%;
+    margin-left: 10%;
+    background-color: #05134A
+}
+
+.secondimage {
+    margin-top: 2%;
+    margin-left: 25%;
+
+}
+
+p {
+    font-family: var(--paragraph-font);
+    font-style: italic;
+    color: #05134a;
+    font-size: x-large;
+
+}
+
+h2 {
+
+    font-size: 2em;
+
+}
+
+h3 {
+
+    font-size: 1.75em;
+
+}
+
+h4 {
+
+    font-size: 1.5em;
+
+}
+
+h5 {
+
+    font-size: 1.25em;
+
+}
+
+h6 {
+
+    font-size: .75em;
+
+}
+
+img {
+
+    max-width: 100%;
+
+}
+
+p {
+
+    padding: 20px;
+    margin: 0;
+
+}
+
+a {
+
+    text-decoration: none;
+
+}
+
+
+
+/****************************************************************
+
+* *
+
+* default properties for all pages *
+
+* *
+
+*****************************************************************/
+
+.backgroundsize {
+
+    max-width: 1600px;
+
+    margin: 0 auto;
+
+}
+
+/*  This rule name changes based upon the default button color   */
+
+.btn-blue {
+
+    background-color: var(--primary-color);
+
+    padding: 1em 6em;
+
+    color: var(--accent2-color);
+
+}
+
+.buttons {
+
+    grid-column: 1/-1;
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-around;
+
+    margin: 0 30px;
+
+    border-radius: 20px;
+
+}
+
+/*  This is the default grid layout for all grids. Other grids can be defined as needed. */
+
+.grid-default {
+
+    display: grid;
+
+    grid-template-columns: repeat(1, 6fr);
+
+    gap: 3em 0;
+
+}
+
+
+
+/****************************************************************
+
+* *
+
+* header area properties *
+
+* *
+
+*****************************************************************/
+
+header {
+
+    display: grid;
+
+    grid-template-columns: 250px auto;
+
+    align-items: center;
+
+    background-color: var(--secondary-color);
+    margin-bottom: 50px;
+
+}
+
+nav {
+
+    display: grid;
+    
+    display: flex;
+}
+
+nav a {
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: 'Roboto Serif';
+    text-decoration: none;
+    margin-right: 50px;
+    margin-left: 50px
+}
+
+
+
+/*  HTML format for these next 2 rules
+
+*    <a class="nav-item" href="...">...</a>    */
+
+
+
+
+
+nav a:hover {
+    color: #F3A712;
+
+
+}
+
+
+
+/****************************************************************
+
+* *
+
+* footer area properties *
+
+* *
+
+*****************************************************************/
+
+footer {
+
+    background-color: #A8C686;
+    color: var(--accent2-color);
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+
+}
+
+.rite {
+    color: #05134a;
+}
+
+.social {
+
+    display: flex;
+    align-items: center;
+
 }
