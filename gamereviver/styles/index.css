@@ -33,10 +33,13 @@
 body {
     background-color: #A8C686;
     font-family: var(--paragraph-font);
-
     font-size: 15px;
-
     color: var(--accent3-color);
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+    text-align: center;
 
 }
 
@@ -118,6 +121,12 @@ p {
     color: #05134a;
     font-size: x-large;
 
+}
+
+.headtext {
+    font-family: var(--paragraph-font);
+    font-weight: bolder;
+    color: #05134a;
 }
 
 h2 {
@@ -257,7 +266,7 @@ header {
 nav {
 
     display: grid;
-    
+
     display: flex;
 }
 
@@ -301,11 +310,13 @@ nav a:hover {
 
 footer {
 
-    background-color: #A8C686;
+    background-color: #F3A712;
     color: var(--accent2-color);
     justify-content: space-around;
+    height: 110px;
     align-items: center;
     display: flex;
+    
 
 }
 
@@ -313,9 +324,21 @@ footer {
     color: #05134a;
 }
 
-.social {
+.rite:hover {
+    background-color: #F3A712;
+}
 
+.social {
     display: flex;
     align-items: center;
+    margin-left: 25%;
+    padding-left: 3%;
+}
 
+
+
+.site:hover {
+    color: #F3A712;
+    background-color: #A8C686;
+    border-radius: 50%;
 }
