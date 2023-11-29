@@ -29,13 +29,16 @@
     --nav-hover-link-color: #F3A712;
     --nav-hover-background-color: #05134a;
 }
-
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
 body {
     background-color: #A8C686;
     font-family: var(--paragraph-font);
     font-size: 15px;
     color: var(--accent3-color);
-    max-width: 960px;
+  
     margin: 0 auto;
     padding: 4em;
     font-size: 18px;
