@@ -25,24 +25,25 @@
     /* paragraph text on a colored background */
     --paragraph-background-color: #05134a;
     --nav-link-color: #fb0f07;
-    --nav-background-color: #A8C686;
+    --nav-background-color: #fb0f07;
     --nav-hover-link-color: #F3A712;
     --nav-hover-background-color: #05134a;
 }
-#content {
-    max-width: 1600px;
-    margin: 0 auto;
-}
+
+
+
+
 body {
     background-color: #A8C686;
     font-family: var(--paragraph-font);
     font-size: 15px;
     color: var(--accent3-color);
-  
-    margin: 0 auto;
+    margin: auto;
     padding: 4em;
+    max-width: 1200px;
     font-size: 18px;
     text-align: center;
+    display: flex;
 
 }
 
@@ -51,11 +52,11 @@ body {
     margin-left: 10px;
     border-radius: 100px;
     background-color: #F3A712;
-    transition: transform .5s;
+    transform-style: preserve-3d;
 }
 
 .logo:hover {
-    opacity: .6;
+    opacity: .7;
     transform: scale(2.1);
 }
 
@@ -90,12 +91,12 @@ h6 {
 }
 
 h1 {
-    font-style: oblique;
+    font-style: italic;
     color: #C70707;
-    font-size: 3.5em;
+    font-size: 2.5em;
     font-family: var(--heading-font);
     background-color: #F3A712;
-    border-radius: 30%;
+    border-radius: 50px;
     text-align: center;
 }
 
@@ -120,9 +121,10 @@ h1 {
 
 p {
     font-family: var(--paragraph-font);
-    font-style: italic;
+    font-style: inherit;
     color: #05134a;
     font-size: x-large;
+    font-weight: 500;
 
 }
 
@@ -193,13 +195,6 @@ a {
 
 *****************************************************************/
 
-.backgroundsize {
-
-    max-width: 1600px;
-
-    margin: 0 auto;
-
-}
 
 /*  This rule name changes based upon the default button color   */
 
@@ -277,12 +272,19 @@ nav a {
     font-style: italic;
     font-weight: bolder;
     font-size: 30px;
+    color: #A8C686;
     font-family: 'Roboto Serif';
     text-decoration: none;
     margin-right: 50px;
-    margin-left: 50px
+    margin-left: 50px;
+    transition: transform.5s;
 }
 
+nav a:hover {
+
+    opacity: .6;
+    transform: scale(1.5);
+}
 
 
 /*  HTML format for these next 2 rules
@@ -319,7 +321,8 @@ footer {
     height: 110px;
     align-items: center;
     display: flex;
-    
+    font-weight: bolder;
+
 
 }
 
@@ -336,6 +339,8 @@ footer {
     align-items: center;
     margin-left: 25%;
     padding-left: 3%;
+    border-radius: 40%;
+    transform-style: preserve-3d;
 }
 
 
