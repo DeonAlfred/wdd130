@@ -31,8 +31,14 @@
 }
 
 
+@media screen and (max-width: 900px) {
 
 
+    header, nav, main, footer {
+        display: block;
+    } 
+
+}
 body {
     background-color: #A8C686;
     font-family: var(--paragraph-font);
@@ -350,3 +356,5 @@ footer {
     background-color: #A8C686;
     border-radius: 50%;
 }
+
+@media screen and (max-width: 900px) {}
