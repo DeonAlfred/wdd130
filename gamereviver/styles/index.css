@@ -63,7 +63,7 @@ body {
     border-radius: 100px;
     background-color: #C70707;
     height: 10%;
-    padding: auto;
+
 }
 
 .logo:hover {
@@ -111,21 +111,25 @@ h1 {
     border-radius: 50px;
     text-align: center;
 }
-.h11{
+
+.h11 {
     background-color: #C70707;
     color: #A8C686;
 }
-.nes1{
+
+.nes1 {
     border: 6px solid #F3A712;
-    margin:0%;
+    margin: 0%;
     box-shadow: 4px 4px 6px 6px #C70707;
 }
-.nes1:hover{
+
+.nes1:hover {
     opacity: .3;
     transform: scale(1.2);
-    
+
 }
-.pac{
+
+.pac {
     border: 6px solid #F3A712;
     width: 700px;
     margin-bottom: 15px;
@@ -218,11 +222,13 @@ p {
 
 .next:hover {
 
-    background-color:#C70707;
+    background-color: #C70707;
 }
- .previous:hover {
-    background-color:#05134a;
+
+.previous:hover {
+    background-color: #05134a;
 }
+
 .previous {
     background-color: #F3A712;
     color: #C70707;
@@ -412,4 +418,3 @@ footer {
     background-color: #A8C686;
     border-radius: 50%;
 }
-
