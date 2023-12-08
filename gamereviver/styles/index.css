@@ -9,7 +9,7 @@
     --accent1-color: #F3A712;
     --accent2-color: #A8C686;
     --accent3-color: #264a0527;
-    
+
 
     /* change the values below to your chosen font(s) */
     --heading-font: 'Courgette', cursive;
@@ -45,7 +45,7 @@
 }
 
 body {
-    background-color:#B9BFC1 ;
+    background-color: #B9BFC1;
     font-family: var(--paragraph-font);
     font-size: 15px;
     color: var(--accent3-color);
@@ -123,7 +123,7 @@ h1 {
     width: 50%;
     margin-left: 5%;
 }
-}
+
 
 .h11 {
     background-color: #C70707;
@@ -189,36 +189,39 @@ p {
     font-style: oblique;
     color: #05134a;
     border-width: 50px;
-    box-sizing: 50%;
-
-
 }
-.hoggpic{
+
+.hoggpic {
     margin-top: 3%;
     margin-left: 20%;
     box-shadow: 6px 6px 6px 6px #05134a
 }
-.hogg{
+
+.hogg {
     text-align: center;
     color: #C70707;
     font-weight: bold;
 }
-.deadspace{
+
+.deadspace {
     margin-top: 3%;
     margin-left: 20%;
-    box-shadow: 6px 6px 6px 6px #05134a 
+    box-shadow: 6px 6px 6px 6px #05134a
 }
-.dead{
+
+.dead {
     text-align: center;
     color: #C70707;
     font-weight: bold;
 }
-.forspokenpic{
+
+.forspokenpic {
     margin-top: 3%;
     margin-left: 20%;
-    box-shadow: 6px 6px 6px 6px #05134a 
+    box-shadow: 6px 6px 6px 6px #05134a
 }
-.for{
+
+.for {
     text-align: center;
     color: #C70707;
     font-weight: bold;
@@ -474,10 +477,6 @@ footer {
     border-radius: 50%;
 }
 
-.face {
-    box-shadow: #F3A712;
-
-}
 
 
 @media screen and (max-width: 900px) {
@@ -490,7 +489,7 @@ footer {
     }
 
     header {
-        display: flexbox;
+        display: block;
         flex-direction: row;
     }
 
