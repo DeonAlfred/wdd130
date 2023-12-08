@@ -9,6 +9,8 @@ Fonts are separated by a | */
   --secondary-color: #05134A;
   --accent1-color: #F3A712;
   --accent2-color:#A8C686 ;
+  --accent3-color: #B9BFC1 ;
+    
 
   /* change the values below to your chosen font(s) */
   --heading-font:  'Courgette', cursive;
