@@ -8,8 +8,8 @@
     --secondary-color: #05134A;
     --accent1-color: #F3A712;
     --accent2-color: #A8C686;
-    --accent3-color:#B9BFC1 ;
-    
+    --accent3-color: #B9BFC1;
+
 
     /* change the values below to your chosen font(s) */
     --heading-font: 'Courgette', cursive;
@@ -32,20 +32,19 @@
     --nav-hover-background-color: #05134a;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
 }
 
-.header {
-    display: grid;
-    margin: auto;
-    grid-template-columns: 150px;
-    align-items: start;
-}
 
 body {
-    background-color:#B9BFC1 ;
+    background-color: #B9BFC1;
     font-family: var(--paragraph-font);
     font-size: 15px;
     color: var(--accent3-color);
@@ -119,10 +118,10 @@ h1 {
     font-family: var(--heading-font);
     background-color: #F3A712;
     border-radius: 50px;
-    margin-right: 15%;
-    width: 50%;
-    margin-left: 5%;
+    align-self: center;
+    padding: 10px 1em;
 }
+
 
 
 .h11 {
@@ -190,32 +189,38 @@ p {
     color: #05134a;
     border-width: 50px;
 }
-.hoggpic{
-    margin-top: 3%;
-    margin-left: 20%;
+
+.hoggpic {
+    box-shadow: 6px 6px 6px 6px #05134a;
+    max-width: 700px;
+    align-self: center;
+}
+
+.hogg {
+    text-align: center;
+    color: #C70707;
+    font-weight: bold;
+}
+
+.deadspace {
+    max-width: 700px;
+    align-self: center;
     box-shadow: 6px 6px 6px 6px #05134a
 }
-.hogg{
+
+.dead {
     text-align: center;
     color: #C70707;
     font-weight: bold;
 }
-.deadspace{
-    margin-top: 3%;
-    margin-left: 20%;
-    box-shadow: 6px 6px 6px 6px #05134a 
+
+.forspokenpic {
+    max-width: 700px;
+    align-self: center;
+    box-shadow: 6px 6px 6px 6px #05134a
 }
-.dead{
-    text-align: center;
-    color: #C70707;
-    font-weight: bold;
-}
-.forspokenpic{
-    margin-top: 3%;
-    margin-left: 20%;
-    box-shadow: 6px 6px 6px 6px #05134a 
-}
-.for{
+
+.for {
     text-align: center;
     color: #C70707;
     font-weight: bold;
@@ -365,7 +370,7 @@ p {
 
 * header area properties *
 
-* *
+
 
 *****************************************************************/
 
@@ -375,11 +380,12 @@ header {
 
     grid-template-columns: 250px auto;
 
-    align-items: center;
-
     background-color: var(--secondary-color);
     margin-bottom: 50px;
+    display: grid;
+    margin: auto;
 
+    align-items: center;
 }
 
 nav {
@@ -463,6 +469,11 @@ footer {
     transform-style: preserve-3d;
 }
 
+.site a {
+    color: #05134a;
+    text-decoration: none;
+}
+
 
 
 .site:hover {
@@ -471,10 +482,6 @@ footer {
     border-radius: 50%;
 }
 
-.face {
-    box-shadow: #F3A712;
-
-}
 
 
 @media screen and (max-width: 900px) {
@@ -487,13 +494,19 @@ footer {
     }
 
     header {
-        display: flexbox;
+        display: block;
         flex-direction: row;
     }
 
     nav {
-        display: inline;
+        display: block;
         flex-direction: column;
+        grid-column: 1/3;
+    }
+
+    .p {
+        display: block;
+        width: auto;
     }
 
     .next,
@@ -502,6 +515,6 @@ footer {
         flex-direction: row;
         height: 10px;
         text-size-adjust: 50%;
-        width: 2%
+        width: 2px
     }
 }
